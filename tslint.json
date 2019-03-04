@@ -1,0 +1,12 @@
+{
+    "extends": ["tslint-angular"],
+    "rules": {
+        "directive-selector": [true, "attribute", "ngx", "camelCase"],
+        "component-selector": [true, "element", "ngx", "kebab-case"],
+        "max-line-length": [true, { "limit": 140, "ignore-pattern": "^import |^export {(.*?)}" }],
+        "no-bitwise": false,
+        "no-console": [true, "debug", "info", "time", "timeEnd", "trace", "log"],
+        "no-consecutive-blank-lines": [true, 2],
+        "max-classes-per-file": false
+    }
+}
