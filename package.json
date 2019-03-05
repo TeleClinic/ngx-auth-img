@@ -1,12 +1,25 @@
 {
     "name": "ngx-auth-img",
     "description": "Angular directive to automatically attach authentication to img requests made from your templates.",
-    "version": "0.1.0",
-    "license": "AGPL-3.0-or-later",
+    "version": "0.1.1",
+    "license": "MIT",
     "peerDependencies": {
         "@angular/common": "^7.2.0",
         "@angular/core": "^7.2.0",
         "ngx-logger": "^3.0.5"
+    },
+    "author": "TeleClinic Authors",
+    "homepage": "https://github.com/TeleClinic/ngx-auth-img",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:TeleClinic/ngx-auth-img.git"
+    },
+    "bugs": {
+        "url": "https://github.com/TeleClinic/ngx-auth-img/issues"
+    },
+    "engines": {
+        "node": ">= 8.9.0",
+        "npm": ">= 5.5.1"
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "~0.7.0",
