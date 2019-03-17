@@ -10,8 +10,7 @@ import {
     OnInit,
     SimpleChanges
 } from '@angular/core';
-import { NGXLogger } from 'ngx-logger';
-import { Subject, Subscription } from 'rxjs/';
+import { Subject, Subscription } from 'rxjs';
 
 import { AUTH_IMG_CONFIG_TOKEN, AuthImgConfigInterface } from './auth-img-config.interface';
 
@@ -32,13 +31,13 @@ export class AuthImgDirective implements OnInit, OnChanges, OnDestroy {
     constructor(
         private host: ElementRef,
         @Inject(AUTH_IMG_CONFIG_TOKEN)
-        private authImgConfig: AuthImgConfigInterface,
-        private logger: NGXLogger
+        private authImgConfig: AuthImgConfigInterface
     ) {
         this.sub.add(
             this.sourceChange.subscribe((imgUrl: string) => {
                 if (this.debug) {
-                    this.logger.debug('[AuthImgDirective] src attribute changed to: ', imgUrl);
+                    // tslint:disable-next-line:no-console
+                    console.log('[AuthImgDirective] src attribute changed to: ', imgUrl);
                 }
                 this.src = imgUrl;
             })
