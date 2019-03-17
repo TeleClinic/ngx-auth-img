@@ -13,6 +13,10 @@
         "template-img",
         "thumbnail preview"
     ],
+    "main": "./bundles/ngx-auth-img.umd.js",
+    "module": "./esm5/ngx-auth-img.js",
+    "es2015": "./esm2015/ngx-auth-img.js",
+    "typings": "./ngx-auth-img.d.ts",
     "repository": {
         "type": "git",
         "url": "git@github.com:TeleClinic/ngx-auth-img.git"
