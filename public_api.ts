@@ -1,4 +1,4 @@
 /*
  * Public API Surface of ngx-auth-img
  */
-export * from './src';
+export * from './src/lib/index';
