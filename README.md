@@ -32,7 +32,7 @@ Is an [Angular](https://angular.io/) attribute directive. It can do the followin
 <img ngxAuthImg [src]="https://example.com/asset.png">
 ```
 
-5. You can override e.g. a fallback source as attribute `fallbackSrc` for each usage
+5. You can override a fallback source as attribute `fallbackSrc` or `thumbnailOnly` for each usage
 
 ## Configure
 
